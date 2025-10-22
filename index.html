@@ -8,15 +8,18 @@
 </head>
 <body>
     <a-scene embedded arjs>
+        <a-light type="ambient" color="#FFF" intensity="0.5"></a-light>
+        <a-light type="directional" color="#FFF" intensity="0.7" position="-1 1 2"></a-light>
         <a-assets>
             <a-asset-item id="eventImgJPEG" src="./MDs_Event_thumbnail.jpg"></a-asset-item>
         </a-assets>
         <a-marker preset="hiro">
-            <a-image src="#eventImgJPEG" position="0 0.1 0" rotation="-90 0 0" shader="flat"></a-image>
+            <a-image src="#eventImgJPEG" position="0 0.1 0" rotation="-90 0 0" shader="flat" width="1.78" height="1"></a-image>
         </a-marker>
         <a-entity camera></a-entity>
     </a-scene>
 </body>
 
 </html>
+
 
